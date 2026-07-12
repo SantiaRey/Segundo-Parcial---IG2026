@@ -1,3 +1,5 @@
+// ARRAY CON DATOS DE LAS OBRAS //
+
 let nombres = [
     "Pulse Room",
     "Body Movies",
@@ -14,6 +16,7 @@ let anios = [
     2015
 ];
 
+// ARRAY CON LAS IMAGENES //
 let imagenes = [
     "img/pulse-room.jpg",
     "img/body-movies.jpg",
@@ -22,8 +25,11 @@ let imagenes = [
     "img/zoom-pavilion.jpg"
 ];
 
+// CAPTURAR ELEMENTOS DEL HTML //
 let galeria = document.getElementById("galeria");
 
+
+// GENERACION AUTOMATICA DE LA GALERIA //
 for (let i = 0; i < nombres.length; i++) {
 
     galeria.innerHTML += `
@@ -42,11 +48,12 @@ for (let i = 0; i < nombres.length; i++) {
 
 }
 
+// EVENTO PARA CAMBIAR EL DISEÑO DE LA GALERIA //
 let boton = document.getElementById("btnTamano");
 
 boton.addEventListener("click", cambiarDisenio);
 
-
+// FUNCION PARA CAMBIAR EL TAMAÑO DE LA GALERIA //
 function cambiarDisenio() {
 
     galeria.classList.toggle("galeriaGrande");
