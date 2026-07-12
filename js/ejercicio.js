@@ -1,3 +1,5 @@
+
+// variables principales //
 let cantidadObras;
 let consumoHora;
 let costoKwh;
