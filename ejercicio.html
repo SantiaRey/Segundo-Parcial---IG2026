@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Luces</title>
+
+    <link rel="stylesheet" href="estilos/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header>
+            <h1>Sistema de Control de Luces</h1>
+        </header>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="ejercicio.html">Sistema</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section>
+                <article>
+                    <h2>Configuración</h2>
+
+                    <p>Ingresar los datos generales del sistema.</p>
+
+                    <form>
+                        <label for="cantidadObras">
+                            Cantidad de obras
+                        </label>
+
+                        <input type="number" id="cantidadObras" min="1">
+
+                        <label for="consumoHora">
+                            Consumo por hora (kWh)
+                        </label>
+
+                        <input type="number" id="consumoHora" step="0.1">
+
+                        <label for="costoKwh">
+                            Costo por kWh
+                        </label>
+
+                        <input type="number" id="costoKwh" step="0.01">
+
+                        <button type="button" id="btnConfigurar">
+                            Comenzar carga
+                        </button>
+                    </form>
+                </article>
+            </section>
+
+
+            <section>
+                <article>
+                    <h2>Datos de cada obra</h2>
+
+                    <p id="contador">
+                        Obras cargadas: 0
+                    </p>
+
+                    <form>
+                        <label for="nombreObra">
+                            Nombre
+                        </label>
+
+                        <input type="text" id="nombreObra" disabled>
+
+                        <label for="cantidadLuces">
+                            Cantidad de luces
+                        </label>
+
+                        <input type="number" id="cantidadLuces" min="1" disabled>
+
+                        <label for="horas">
+                            Horas por día
+                        </label>
+
+                        <input type="number" id="horas" min="1" disabled>
+
+                        <button type="button" id="btnAgregar" disabled>
+                            Agregar obra
+                        </button>
+                    </form>
+                </article>
+            </section>
+
+
+            <section id="resultados">
+
+                <h2>Resultados</h2>
+                <p id="resultado1">
+                    Consumo diario total:
+                </p>
+
+                <p id="resultado2">
+                    Consumo promedio por obra:
+                </p>
+
+                <p id="resultado3">
+                    Obra con mayor tiempo:
+                </p>
+
+                <p id="resultado4">
+                    Costo diario:
+                </p>
+
+                <p id="resultado5">
+                    Porcentaje con más de 20 luces:
+                </p>
+
+                <button type="button" id="btnCalcular" disabled>
+                    Calcular resultados
+                </button>
+
+                <button type="button" id="btnReiniciar" disabled>
+                    Reiniciar sistema
+                </button>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                Contacto:
+                <a href="mailto:rafael@artedigital.com">
+                    rafael@artedigital.com
+                </a>
+            </p>
+
+            <p class="footer-texto">
+                © 2026 Rafael Lozano-Hemmer. Todos los derechos reservados.
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="js/ejercicio.js"></script>
+</body>
+
+</html>
