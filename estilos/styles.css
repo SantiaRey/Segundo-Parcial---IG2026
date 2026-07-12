@@ -1,15 +1,18 @@
 /*=========================================
     RESET GENERAL
 =========================================*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 /*=========================================
     ESTILOS GENERALES
 =========================================*/
+
 body {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
@@ -18,9 +21,11 @@ body {
     color: white;
 }
 
+
 /*=========================================
     TIPOGRAFÍA
 =========================================*/
+
 h1,
 h2,
 h3,
@@ -30,9 +35,11 @@ button {
     font-family: "Barlow", sans-serif;
 }
 
+
 /*=========================================
     BLOCKQUOTE
 =========================================*/
+
 blockquote {
     font-style: italic;
     font-size: 1.2rem;
@@ -43,6 +50,7 @@ blockquote {
     border-radius: 10px;
     text-align: center;
 }
+
 
 /*=========================================
     CONTENEDOR PRINCIPAL
@@ -57,9 +65,11 @@ blockquote {
     border-radius: 10px;
 }
 
+
 /*=========================================
     HEADER
 =========================================*/
+
 header {
     text-align: center;
     background-color: #218BC9;
@@ -75,6 +85,7 @@ header h1 {
 header p {
     font-size: 1.1rem;
 }
+
 
 /*=========================================
     MENÚ DE NAVEGACIÓN
@@ -114,14 +125,17 @@ nav {
     transform: scale(1.05);
 }
 
+
 /*=========================================
     LAYOUT DE TRES COLUMNAS (INDEX)
 =========================================*/
+
 .tres-columnas {
     display: flex;
     gap: 2rem;
     align-items: stretch;
 }
+
 .columna {
     flex: 1;
     padding: 2rem;
@@ -130,9 +144,11 @@ nav {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
+
 /*=========================================
     SECCIONES E IMÁGENES
 =========================================*/
+
 section {
     margin-bottom: 3rem;
 }
@@ -141,9 +157,11 @@ img {
     max-width: 100%;
 }
 
+
 /*=========================================
     DATO CURIOSO
 =========================================*/
+
 #datoCurioso {
     margin: 1rem 0;
     padding: 1rem;
@@ -153,9 +171,11 @@ img {
     border-radius: 5px;
 }
 
+
 /*=========================================
     BOTONES
 =========================================*/
+
 button {
     padding: .7rem 1.2rem;
     border: none;
@@ -165,6 +185,16 @@ button {
     cursor: pointer;
     font-family: "Barlow", sans-serif;
     margin-top: 1rem;
+}
+
+
+/*=========================================
+    VIDEO (IFRAME)
+=========================================*/
+
+iframe {
+    border: none;
+    border-radius: 10px;
 }
 
 
@@ -193,9 +223,11 @@ button {
 
 }
 
+
 /*=========================================
     FOOTER
 =========================================*/
+
 footer {
     text-align: center;
     background-color: #218BC9;
@@ -213,9 +245,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /*=========================================
     GALERÍA DE OBRAS
 =========================================*/
+
 #galeria {
     display: flex;
     flex-wrap: wrap;
@@ -236,16 +270,20 @@ footer a:hover {
     padding: 10px;
 }
 
+
 /*=========================================
     CAMBIO DE DISEÑO DE LA GALERÍA
 =========================================*/
+
 .galeriaGrande .obra {
     width: 320px;
 }
 
+
 /*=========================================
     LAYOUT DE DOS COLUMNAS (OBRAS)
 =========================================*/
+
 .dos-columnas {
     display: flex;
     gap: 2rem;
@@ -260,9 +298,11 @@ footer a:hover {
     flex: 2;
 }
 
+
 /*=========================================
     FORMULARIOS
 =========================================*/
+
 form {
     display: flex;
     flex-direction: column;
@@ -274,6 +314,7 @@ input {
     border: 1px solid #999;
     border-radius: 5px;
 }
+
 
 /*=========================================
     RESULTADOS DEL EJERCICIO
