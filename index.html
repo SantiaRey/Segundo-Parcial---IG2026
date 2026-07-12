@@ -2,22 +2,35 @@
 <html lang="es">
 
 <head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
     <title>Rafael Lozano-Hemmer | Inicio</title>
+
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="estilos/styles.css">
+
+    <!-- Tipografía Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
+
+    <!-- Contenedor principal -->
     <div class="contenedor">
+
+        <!-- Encabezado -->
         <header>
             <h1>Rafael Lozano-Hemmer</h1>
             <p>Interactividad, Espacio Público y Arte Tecnológico</p>
+
         </header>
 
+        <!-- Menú de navegación -->
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
@@ -26,57 +39,92 @@
             </ul>
         </nav>
 
+        <!-- Contenido principal -->
         <main>
+
+            <!-- Cita destacada -->
             <section class="contenido">
                 <blockquote>
-                    "Me interesa crear plataformas para la participación, donde la obra no existe sin la presencia del
-                    público.”
+                    "Me interesa crear plataformas para la participación,
+                    donde la obra no existe sin la presencia del público.”
                 </blockquote>
             </section>
+
+            <!-- Layout de tres columnas -->
             <section class="tres-columnas">
+
+                <!-- Columna 1 -->
                 <article class="columna">
                     <h3>Arte interactivo y Participación</h3>
                     <img src="img/lozano-hemmer.jpg" alt="Rafael Lozano-Hemmer">
-                    <p>Rafael Lozano-Hemmer es un artista contemporáneo reconocido por sus instalaciones interactivas
-                        que combinan tecnología, arquitectura y participación del público.
-                        Su trabajo se centra en la creación de obras que requieren la presencia activa de las personas
-                        para completarse, transformando al espectador en protagonista.
-                    </p>
-                </article>
-                <article class="columna">
-                    <h3>Sistemas Interactivos</h3>
-                    <img src="img/lozano-hemmer-1.jpg" alt="Rafael Lozano-Hemmer">
-                    <p>Sus proyectos utilizan sensores, proyecciones, luces y sistemas digitales para responder en
-                        tiempo real a estímulos como el movimiento, la voz o los datos biométricos. Este enfoque genera
-                        experiencias dinámicas donde cada interacción produce un resultado único e irrepetible.
+                    <p>
+                        Rafael Lozano-Hemmer es un artista contemporáneo
+                        reconocido por sus instalaciones interactivas
+                        que combinan tecnología, arquitectura y
+                        participación del público.
+
+                        Su trabajo se centra en la creación de obras
+                        que requieren la presencia activa de las personas
+                        para completarse, transformando al espectador
+                        en protagonista.
                     </p>
                 </article>
 
+                <!-- Columna 2 -->
+                <article class="columna">
+                    <h3>Sistemas Interactivos</h3>
+                    <img src="img/lozano-hemmer-1.jpg" alt="Rafael Lozano-Hemmer">
+                    <p>
+                        Sus proyectos utilizan sensores, proyecciones,
+                        luces y sistemas digitales para responder
+                        en tiempo real a estímulos como el movimiento,
+                        la voz o los datos biométricos.
+
+                        Este enfoque genera experiencias dinámicas
+                        donde cada interacción produce un resultado
+                        único e irrepetible.
+                    </p>
+                </article>
+
+                <!-- Columna 3 -->
                 <article class="columna">
                     <h3>Dato Curioso</h3>
                     <img src="img/lozano-hemmer-2.jpg" alt="Rafael Lozano-Hemmer">
-                    <p>Presioná el botón para descubrir datos ramdom sobre Rafael Lozano-Hemmer
+
+                    <p>
+                        Presioná el botón para descubrir
+                        datos aleatorios sobre Rafael Lozano-Hemmer.
                     </p>
+
+                    <!-- Contenedor donde JavaScript mostrará el dato -->
                     <div id="datoCurioso">
-                        Aquí aparecerá el dato Random.
+                        Aquí aparecerá el dato aleatorio.
                     </div>
-                    <button id="btnDato">Descubrir Dato</button>
+
+                    <!-- Botón que ejecuta la función de JavaScript -->
+                    <button id="btnDato">
+                        Descubrir dato
+                    </button>
                 </article>
             </section>
 
         </main>
-
+        <!-- Pie de página -->
         <footer>
-            <p>Contacto:
-                <a href="mailto:rafael@artedigital.com">rafael@artedigital.com
+            <p>
+                Contacto:
+                <a href="mailto:rafael@artedigital.com">
+                    rafael@artedigital.com
                 </a>
             </p>
-            <p class="footer-texto">© 2026 Rafael Lozano-Hemmer. Todos los derechos reservados.
+
+            <p class="footer-texto">
+                © 2026 Rafael Lozano-Hemmer.
+                Todos los derechos reservados.
             </p>
         </footer>
-
     </div>
+    <!-- Archivo JavaScript de la página de inicio -->
     <script src="js/index.js"></script>
 </body>
-
 </html>

@@ -2,24 +2,32 @@
 <html lang="es">
 
 <head>
+
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
     <title>Sistema de Control de Luces</title>
 
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="estilos/styles.css">
 
+    <!-- Tipografía Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+    <!-- Contenedor principal -->
     <div class="contenedor">
-
+        <!-- Encabezado -->
         <header>
             <h1>Sistema de Control de Luces</h1>
         </header>
-
+        <!-- Menú de navegación -->
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
@@ -27,34 +35,28 @@
                 <li><a href="ejercicio.html">Sistema</a></li>
             </ul>
         </nav>
-
+        <!-- Contenido principal -->
         <main>
-
+            <!-- Configuración inicial del sistema -->
             <section>
                 <article>
                     <h2>Configuración</h2>
-
                     <p>Ingresar los datos generales del sistema.</p>
-
                     <form>
                         <label for="cantidadObras">
                             Cantidad de obras
                         </label>
-
                         <input type="number" id="cantidadObras" min="1">
-
                         <label for="consumoHora">
                             Consumo por hora (kWh)
                         </label>
-
                         <input type="number" id="consumoHora" step="0.1">
-
                         <label for="costoKwh">
                             Costo por kWh
                         </label>
-
                         <input type="number" id="costoKwh" step="0.01">
 
+                        <!-- Botón para comenzar la carga de datos -->
                         <button type="button" id="btnConfigurar">
                             Comenzar carga
                         </button>
@@ -62,11 +64,11 @@
                 </article>
             </section>
 
-
+            <!-- Formulario para ingresar cada obra -->
             <section>
                 <article>
                     <h2>Datos de cada obra</h2>
-
+                    <!-- Contador de obras cargadas -->
                     <p id="contador">
                         Obras cargadas: 0
                     </p>
@@ -75,21 +77,16 @@
                         <label for="nombreObra">
                             Nombre
                         </label>
-
                         <input type="text" id="nombreObra" disabled>
-
                         <label for="cantidadLuces">
                             Cantidad de luces
                         </label>
-
                         <input type="number" id="cantidadLuces" min="1" disabled>
-
                         <label for="horas">
                             Horas por día
                         </label>
-
                         <input type="number" id="horas" min="1" disabled>
-
+                        <!-- Botón para agregar una nueva obra -->
                         <button type="button" id="btnAgregar" disabled>
                             Agregar obra
                         </button>
@@ -97,42 +94,38 @@
                 </article>
             </section>
 
-
+            <!-- Sección donde JavaScript mostrará los resultados -->
             <section id="resultados">
-
                 <h2>Resultados</h2>
                 <p id="resultado1">
                     Consumo diario total:
                 </p>
-
                 <p id="resultado2">
                     Consumo promedio por obra:
                 </p>
-
                 <p id="resultado3">
                     Obra con mayor tiempo:
                 </p>
-
                 <p id="resultado4">
                     Costo diario:
                 </p>
-
                 <p id="resultado5">
                     Porcentaje con más de 20 luces:
                 </p>
 
+                <!-- Botón para realizar los cálculos -->
                 <button type="button" id="btnCalcular" disabled>
                     Calcular resultados
                 </button>
 
+                <!-- Botón para reiniciar el sistema -->
                 <button type="button" id="btnReiniciar" disabled>
                     Reiniciar sistema
                 </button>
-
             </section>
-
         </main>
 
+        <!-- Pie de página -->
         <footer>
             <p>
                 Contacto:
@@ -142,13 +135,14 @@
             </p>
 
             <p class="footer-texto">
-                © 2026 Rafael Lozano-Hemmer. Todos los derechos reservados.
+                © 2026 Rafael Lozano-Hemmer.
+                Todos los derechos reservados.
             </p>
         </footer>
 
     </div>
 
+    <!-- Archivo JavaScript del sistema -->
     <script src="js/ejercicio.js"></script>
 </body>
-
 </html>

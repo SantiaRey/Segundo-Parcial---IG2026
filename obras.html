@@ -2,58 +2,87 @@
 <html lang="es">
 
 <head>
+
+    <!-- Configuración del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
     <title>Rafael Lozano-Hemmer | Obras</title>
+
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="estilos/styles.css">
+
+    <!-- Tipografía Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
+
+    <!-- Contenedor principal -->
     <div class="contenedor">
+        <!-- Encabezado -->
         <header>
             <h1>Rafael Lozano-Hemmer</h1>
-            <p>Galeria Interactiva</p>
+            <p>Galería Interactiva</p>
         </header>
 
+        <!-- Menú de navegación -->
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="obras.html">Obras</a></li>
                 <li><a href="ejercicio.html">Sistema</a></li>
             </ul>
+
         </nav>
-
+        <!-- Contenido principal -->
         <main>
+            <!-- Layout de dos columnas -->
             <section class="dos-columnas">
-
+                <!-- Columna izquierda -->
                 <article class="columna-chica">
                     <h3>Galería de Obras</h3>
-                    <p> Aqui podras ver diferentes obras de Rafael Lozano-Hemmer y juga a cambiar el diseño de la galería apretando el boton</p>
+                    <p>
+                        Aquí podrás ver diferentes obras de Rafael
+                        Lozano-Hemmer y cambiar el diseño de la
+                        galería presionando el botón.
+                    </p>
+
+                    <!-- Botón que cambia el diseño de la galería -->
                     <button id="btnTamano">
-                        Cambiar diseño de la Galería
+                        Cambiar diseño de la galería
                     </button>
+
                 </article>
+                <!-- Columna derecha -->
                 <section id="galeria" class="columna-grande">
+                    <!--
+                        La galería es creada automáticamente
+                        mediante JavaScript.
+                    -->
                 </section>
-
             </section>
-
         </main>
 
+        <!-- Pie de página -->
         <footer>
-            <p>Contacto:
-                <a href="mailto:rafael@artedigital.com">rafael@artedigital.com
+            <p>
+                Contacto:
+                <a href="mailto:rafael@artedigital.com">
+                    rafael@artedigital.com
                 </a>
             </p>
-            <p class="footer-texto">© 2026 Rafael Lozano-Hemmer. Todos los derechos reservados.
+            <p class="footer-texto">
+                © 2026 Rafael Lozano-Hemmer.
+                Todos los derechos reservados.
             </p>
         </footer>
-
     </div>
+    <!-- Archivo JavaScript de la galería -->
     <script src="js/obras.js"></script>
 </body>
-
 </html>
