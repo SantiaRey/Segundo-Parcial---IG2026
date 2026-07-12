@@ -198,23 +198,7 @@ iframe {
         height: 300px;
     }
 
-    .tres-columnas,
-    .dos-columnas {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .columna,
-    .columna-chica,
-    .columna-grande {
-        width: 100%;
-    }
-
-    /* Ajuste de galería */
-    .obra {
-        width: 100%;
-    }
-
+}
 
 /*=========================================
     FOOTER
