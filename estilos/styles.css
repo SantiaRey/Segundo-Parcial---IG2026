@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url("img/fondo.png");
+        line-height: 1.7;
+        color: white;
+}
+
+h1,
+h2,
+h3,
+nav a,
+blockquote,
+button {
+    font-family: "Barlow", sans-serif;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.82);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    background-color: #218BC9;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+nav {
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    background-color: #218BC9;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: 2px solid #024166;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.menu a:hover {
+    background-color: #024166;
+    transform: scale(1.05);
+}
+
+.tres-columnas {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.columna {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(76, 162, 213, 0.90);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+#datoCurioso {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #00bcd4;
+    color: white;
+    border-radius: 5px;
+}
+
+iframe {
+
+    border: none;
+
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .menu {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    article {
+
+        padding: 1.5rem;
+    }
+
+    iframe {
+
+        height: 300px;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #218BC9;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+footer a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
