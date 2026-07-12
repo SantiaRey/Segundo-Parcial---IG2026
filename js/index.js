@@ -1,3 +1,7 @@
+
+// ARRAY CON DATOS CURIOSOS //
+
+
 let datosCuriosos = [
     "Rafael Lozano-Hemmer es un artista mexicano-canadiense especializado en instalaciones interactivas en espacios públicos..",
     "Su obra combina tecnología avanzada como sensores biométricos, robótica y datos en tiempo real.",
@@ -11,10 +15,16 @@ let datosCuriosos = [
     "Utiliza la luz como lenguaje poético para explorar temas de identidad, memoria y presencia."
 ];
 
+// CAPTURAR ELEMENTOS DEL HTML //
+
 let boton = document.getElementById("btnDato");
 let texto = document.getElementById("datoCurioso");
 
+// EVENTO //
+
 boton.addEventListener("click", mostrarDato);
+
+// FUNCION // 
 
 function mostrarDato() {
     let numeroAleatorio = Math.floor(Math.random() * datosCuriosos.length);
