@@ -7,7 +7,7 @@
 body {
     background-image:
           linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-          url("img/fondo.png");
+          url("../img/fondo.png");
         line-height: 1.7;
         color: white;
 }
