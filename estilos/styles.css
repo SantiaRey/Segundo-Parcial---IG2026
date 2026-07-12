@@ -213,3 +213,23 @@ footer a:hover {
 .columna-grande{
     flex:2;
 }
+form{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+input{
+    padding:.6rem;
+    border:1px solid #999;
+    border-radius:5px;
+}
+
+#resultados{
+    padding:1.5rem;
+    border-radius:10px;
+}
+
+#resultados p{
+    margin-bottom:.8rem;
+}
